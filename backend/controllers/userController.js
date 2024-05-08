@@ -56,7 +56,6 @@ exports.logout = catchAsyncErrors(async(req,res, next)=>{
     });
 });
 
-
 // Get User Details: 
 exports.getUserDetails = catchAsyncErrors(async(req, res, next)=>{
     const user = await User.findById(req.user.id);
@@ -66,8 +65,6 @@ exports.getUserDetails = catchAsyncErrors(async(req, res, next)=>{
         user,
     });
 });
-
-
 
 // Update user profile: 
 exports.updateProfile = catchAsyncErrors(async(req, res, next)=>{
